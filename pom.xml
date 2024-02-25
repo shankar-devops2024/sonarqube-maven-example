@@ -8,7 +8,7 @@
     <artifactId>sonarqube-maven-example</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Example of basic Maven project to integrate with SonarQube</name>
+    <name>Maven_Project</name>
     <build>
         <pluginManagement>
             <plugins>
