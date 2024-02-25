@@ -5,7 +5,7 @@ node {
   stage('SonarQube Analysis') {
 //    def mvn = tool 'Default Maven';
     withSonarQubeEnv() {
-      sh "/opt/maven/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=NodeJS_Project -Dsonar.token=sqa_f7e409defd5ce51cafafe2bcd658d5ed0b77aaf6"
+      sh " mvn sonar:sonar -Dsonar.host.url=http://172.31.6.142:9000 -Dsonar.login=sqa_f7e409defd5ce51cafafe2bcd658d5ed0b77aaf6 -Dsonar.projectKey=NodeJS_Project"
     }
   }
 }
